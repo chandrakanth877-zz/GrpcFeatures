@@ -4,5 +4,11 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
-
+	<ItemGroup>
+		<Protobuf Include="..\Protos\weather.proto" GrpcServices="Client" Link="Protos\weather.proto" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Grpc.AspNetCore" Version="2.33.1" />
+		<PackageReference Include="ConsoleTables" Version="2.4.2" />
+	</ItemGroup>
 </Project>

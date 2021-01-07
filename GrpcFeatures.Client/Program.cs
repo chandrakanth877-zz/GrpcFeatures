@@ -19,11 +19,11 @@ namespace GrpcFeatures.Client
         {
             using var channel = GrpcChannel.ForAddress("https://localhost:5001");
 
-            await InterceptorMethod(channel);
+            //await InterceptorMethod(channel);
 
-            await ExceptionHandling(channel);
+            //await ExceptionHandling(channel);
 
-            await ServiceReflection(channel);
+            //await ServiceReflection(channel);
 
             await HealthCheck(channel);
 
