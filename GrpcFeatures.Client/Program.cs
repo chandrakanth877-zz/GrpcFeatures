@@ -17,7 +17,7 @@ namespace GrpcFeatures.Client
     {
         static async Task Main(string[] args)
         {
-            using var channel = GrpcChannel.ForAddress("https://localhost:5001");
+            using var channel = GrpcChannel.ForAddress("https://localhost:6001");
 
             //await InterceptorMethod(channel);
 
